@@ -160,7 +160,7 @@ export default function Dashboard() {
             ) : (
               <div className="grid md:grid-cols-2 gap-4  h-fit overflow-auto">
                 {cardData?.map((cards, index) => (
-                  <Card data={cards} onClick={(id) => handleReadMore(id)} />
+                    <Card data={cards} onClick={(id) => handleReadMore(id)} key={index}/>
                 ))}
               </div>
             )}

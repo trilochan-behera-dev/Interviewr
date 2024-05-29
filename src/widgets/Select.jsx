@@ -35,8 +35,8 @@ export default function Select({
           }
         >
           <option>{placeholder}</option>
-          {options.map((opt) => (
-            <option selected={value === opt}>{opt}</option>
+          {options.map((opt, index) => (
+            <option selected={value === opt} key={index}>{opt}</option>
           ))}
         </select>
         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">

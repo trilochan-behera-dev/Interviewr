@@ -104,8 +104,8 @@ export default function CardDetails({ cardData, handleBack }) {
         </div>
         <div className="mt-6 border-t border-gray-100">
           <div className="divide-y divide-gray-100">
-            {data.map((d) => (
-              <div className="p-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            {data.map((d,i) => (
+              <div className="p-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0" key={i}>
                 <div className="text-sm font-medium leading-6 text-gray-700">
                   {d.key}
                 </div>
